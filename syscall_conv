@@ -1,0 +1,5 @@
+| Architecture | Syscall number | A1  | A2  | A3  | A4  | A5  | A6  | Call method | Return value |
+|--------------|----------------|-----|-----|-----|-----|-----|-----|-------------|--------------|
+| i386         | eax            | ebx | ecx | edx | esi | edi | ebp | int 0x80    | eax          |
+| x86_64       | rax            | rdi | rsi | rdx | rcx | r8  | r9  | syscall     | rax          |
+| ARM eabi     | r7             | r0  | r1  | r2  | r3  | r4  | r5  | swi 0x0     | r1           |
